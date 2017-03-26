@@ -1,0 +1,31 @@
+ $ cat test.job 
+ #PBS -N LABA
+ #PBS -l nodes=1:ppn=8
+ #PBS -j oe
+
+ cd $PBS_O_WORKDIR
+ gcc matrix.c -fopenmp -o test -std=c11
+ export OMP_NUM_THREADS=2
+ ./test 15000
+ export OMP_NUM_THREADS=4
+ ./test 15000
+ export OMP_NUM_THREADS=6
+ ./test 15000
+ export OMP_NUM_THREADS=8
+ ./test 15000
+ export OMP_NUM_THREADS=2
+ ./test 20000
+ export OMP_NUM_THREADS=4
+ ./test 20000
+ export OMP_NUM_THREADS=6
+ ./test 20000
+ export OMP_NUM_THREADS=8
+ ./test 20000
+ export OMP_NUM_THREADS=2
+ ./test 25000
+ export OMP_NUM_THREADS=4
+ ./test 25000
+ export OMP_NUM_THREADS=6
+ ./test 25000
+ export OMP_NUM_THREADS=8
+ ./test 25000
