@@ -1,0 +1,16 @@
+ $ cat testik.job 
+ #PBS -N LABUSHKA
+ #PBS -l nodes=1:ppn=8
+ #PBS -j oe
+
+ cd $PBS_O_WORKDIR
+ gcc main.c -fopenmp -o test -std=c11 -lm
+ export OMP_NUM_THREADS=2
+ ./test
+ export OMP_NUM_THREADS=4
+ ./test
+ export OMP_NUM_THREADS=6
+ ./test 
+ export OMP_NUM_THREADS=8
+ ./test 
+ 

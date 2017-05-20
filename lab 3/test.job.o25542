@@ -1,0 +1,32 @@
+Serial: n = 100000000
+Result: 1.066657407700
+
+Parallel: n = 100000000
+Result: 1.066735241388
+
+Rez time(sec.): 15.069812836009 (serial) | 7.561089069990 (parallel)
+Speed up (sec.): 1.993074370175
+Serial: n = 100000000
+Result: 1.066657407700
+
+Parallel: n = 100000000
+Result: 1.066706872095
+
+Rez time(sec.): 15.068925682979 (serial) | 3.794101929001 (parallel)
+Speed up (sec.): 3.971671284790
+Serial: n = 100000000
+Result: 1.066657407700
+
+Parallel: n = 100000000
+Result: 1.066516702935
+
+Rez time(sec.): 15.068052822025 (serial) | 2.535828093009 (parallel)
+Speed up (sec.): 5.942064000146
+Serial: n = 100000000
+Result: 1.066657407700
+
+Parallel: n = 100000000
+Result: 1.066406932529
+
+Rez time(sec.): 15.068648010027 (serial) | 1.918207930983 (parallel)
+Speed up (sec.): 7.855586334848
